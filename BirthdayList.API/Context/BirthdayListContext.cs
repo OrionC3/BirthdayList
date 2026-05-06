@@ -7,7 +7,7 @@ namespace BirthdayList.API.Context
     {
         public BirthdayListContext(DbContextOptions<BirthdayListContext> options) : base(options) { }
 
-        public DbSet<Gift> Gift => Set<Gift>();
-        public DbSet<Photo> Photo => Set<Photo>();
+        public DbSet<Gift> Gifts => Set<Gift>();
+        public DbSet<Photo> Photos => Set<Photo>();
     }
 }
