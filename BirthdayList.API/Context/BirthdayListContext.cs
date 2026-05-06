@@ -9,5 +9,10 @@ namespace BirthdayList.API.Context
 
         public DbSet<Gift> Gifts => Set<Gift>();
         public DbSet<Photo> Photos => Set<Photo>();
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(BirthdayListContext).Assembly);
+        }
     }
 }
