@@ -8,6 +8,5 @@
         public string? Link { get; set; }
         public Photo? Photo { get; set; }
         public bool InStock { get; set; }
-
     }
 }

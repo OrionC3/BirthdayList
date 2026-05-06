@@ -11,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BirthdayListContext>(options =>
 {
-    options.UseSqlite("Data Source=homelab.db");
+    options.UseSqlite("Data Source=birthdaylist.db");
 });
 
 var app = builder.Build();
